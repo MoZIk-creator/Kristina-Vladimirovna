@@ -1,0 +1,197 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Кристиночка Владимировна</title>
+
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #ffe6f0, #fff5f9);
+            font-family: Arial, sans-serif;
+            text-align: center;
+            color: #d63384;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        /* Сердечки по краям */
+        .hearts {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .heart {
+            position: absolute;
+            color: #ff69b4;
+            font-size: 18px;
+            animation: float 4s ease-in-out infinite;
+        }
+
+        /* Левая сторона */
+        .heart:nth-child(1)  { left: 1%; top: 5%; }
+        .heart:nth-child(2)  { left: 4%; top: 12%; }
+        .heart:nth-child(3)  { left: 1%; top: 20%; }
+        .heart:nth-child(4)  { left: 5%; top: 28%; }
+        .heart:nth-child(5)  { left: 2%; top: 36%; }
+        .heart:nth-child(6)  { left: 6%; top: 45%; }
+        .heart:nth-child(7)  { left: 1%; top: 53%; }
+        .heart:nth-child(8)  { left: 4%; top: 62%; }
+        .heart:nth-child(9)  { left: 2%; top: 70%; }
+        .heart:nth-child(10) { left: 6%; top: 80%; }
+        .heart:nth-child(11) { left: 1%; top: 90%; }
+
+        /* Правая сторона */
+        .heart:nth-child(12) { right: 1%; top: 4%; }
+        .heart:nth-child(13) { right: 5%; top: 12%; }
+        .heart:nth-child(14) { right: 2%; top: 21%; }
+        .heart:nth-child(15) { right: 6%; top: 30%; }
+        .heart:nth-child(16) { right: 1%; top: 39%; }
+        .heart:nth-child(17) { right: 4%; top: 48%; }
+        .heart:nth-child(18) { right: 2%; top: 57%; }
+        .heart:nth-child(19) { right: 6%; top: 66%; }
+        .heart:nth-child(20) { right: 1%; top: 75%; }
+        .heart:nth-child(21) { right: 5%; top: 84%; }
+        .heart:nth-child(22) { right: 2%; top: 93%; }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0) scale(1);
+            }
+            50% {
+                transform: translateY(-10px) scale(1.15);
+            }
+        }
+
+        /* Основной блок */
+        .content {
+            position: relative;
+            z-index: 1;
+            max-width: 750px;
+            margin: auto;
+            padding: 60px 25px;
+        }
+
+        h1 {
+            color: #e83e8c;
+            font-size: 38px;
+            margin-bottom: 30px;
+            text-shadow: 0 2px 8px #ffb6d5;
+        }
+
+        p {
+            background: rgba(255, 255, 255, 0.75);
+            padding: 18px 25px;
+            border-radius: 20px;
+            font-size: 20px;
+            line-height: 1.6;
+            box-shadow: 0 4px 15px rgba(255, 105, 180, 0.2);
+        }
+
+        /* Фотографии */
+        .photos {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin: 35px 0;
+        }
+
+        .photos img {
+            width: 280px;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 25px;
+            border: 5px solid white;
+            box-shadow: 0 5px 20px rgba(255, 105, 180, 0.4);
+            transition: 0.3s;
+        }
+
+        .photos img:hover {
+            transform: scale(1.05) rotate(1deg);
+        }
+
+        .heart-big {
+            font-size: 45px;
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Маленькие сердечки -->
+    <div class="hearts">
+        <span class="heart">♥</span>
+        <span class="heart">♥</span>
+        <span class="heart">♡</span>
+        <span class="heart">♥</span>
+        <span class="heart">♡</span>
+        <span class="heart">♥</span>
+        <span class="heart">♡</span>
+        <span class="heart">♥</span>
+        <span class="heart">♡</span>
+        <span class="heart">♥</span>
+        <span class="heart">♡</span>
+
+        <span class="heart">♥</span>
+        <span class="heart">♡</span>
+        <span class="heart">♥</span>
+        <span class="heart">♡</span>
+        <span class="heart">♥</span>
+        <span class="heart">♡</span>
+        <span class="heart">♥</span>
+        <span class="heart">♡</span>
+        <span class="heart">♥</span>
+        <span class="heart">♡</span>
+        <span class="heart">♥</span>
+    </div>
+
+    <div class="content">
+
+        <h1>
+            <i>Этот сайт только для Кристиночки 💗</i>
+        </h1>
+
+        <div class="photos">
+            <img src="Фото/kristina1.jpg" 
+alt="Кристиночка">
+            <img src="Фото/kristina2.jpg" 
+alt="Кристиночка">
+        </div>
+
+        <div class="heart-big">💗</div>
+
+        <p>
+            <i>
+                Кристиночка, нуууууу, ты очень добрая и очень красивая.
+                Пожалуйста, не надо грустить, всё обязательно будет
+                афигенчик! 💕
+            </i>
+        </p>
+
+        <p>
+            <i>
+                Я очень надеюсь на то, что у тебя всегда всё будет очень
+                хорошо, даже когда ты будешь без настроения.
+                И пожалуйста, слушай ту песню, которую я тебе давал послушать. 💗
+            </i>
+        </p>
+
+        <div class="heart-big">♡ ♥ ♡</div>
+
+    </div>
+
+</body>
+</html>
+
+
+
+
+
